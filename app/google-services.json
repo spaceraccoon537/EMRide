@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "186625820990",
+    "project_id": "easemyride-7fa21",
+    "storage_bucket": "easemyride-7fa21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186625820990:android:bc5521ad445747b51fc46f",
+        "android_client_info": {
+          "package_name": "com.example.emride"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186625820990-tk97j8g2l6hugls9p7bvdobritn4h4vu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.emride",
+            "certificate_hash": "89e4a38ed7418ce0a1e9066dd543fed2b17aa5f6"
+          }
+        },
+        {
+          "client_id": "186625820990-l8it8dbvms8mbsuilm5jcss7nu4n8p10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ5su28gB7VCGA74iQq_J_f0Q2xzxOWE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186625820990-l8it8dbvms8mbsuilm5jcss7nu4n8p10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
