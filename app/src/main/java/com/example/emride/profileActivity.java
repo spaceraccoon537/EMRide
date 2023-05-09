@@ -97,5 +97,19 @@ public class profileActivity extends AppCompatActivity {
                 startActivity(new Intent(profileActivity.this,SettingsActivity.class));
             }
         });
+
+        iv_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
+        iv_edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(profileActivity.this,SettingsActivity.class));
+            }
+        });
     }
 }

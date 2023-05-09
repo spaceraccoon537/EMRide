@@ -148,7 +148,7 @@
                         android:id="@+id/iv_mechanic"
                         android:layout_width="180dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/mechanic" />
+                        android:src="@drawable/worker" />
 
                     <TextView
                         android:id="@+id/tv_mechanic"

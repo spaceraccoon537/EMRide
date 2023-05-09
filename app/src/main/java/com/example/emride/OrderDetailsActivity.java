@@ -101,7 +101,7 @@ public class OrderDetailsActivity extends AppCompatActivity {
                             iv_order.setImageResource(R.drawable.diesel);
                         }
                         else if(orderTitle.equals("JumpStart")){
-                            iv_order.setImageResource(R.drawable.mechanic);
+                            iv_order.setImageResource(R.drawable.worker);
                         }
                         else if(orderTitle.equals("Tyre Puncture")){
                             iv_order.setImageResource(R.drawable.tyre);
