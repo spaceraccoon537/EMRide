@@ -2,6 +2,7 @@ package com.example.emride;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -20,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 public class profileActivity extends AppCompatActivity {
 
     private ImageView iv_logout,iv_edit,iv_back;
-    private TextView tv_orders,tv_username,tv_useremail,tv_userphone,tv_settings,tv_contacts,tv_aboutUs;
+    private TextView tv_orders,tv_username,tv_useremail,tv_userphone,tv_settings,tv_contacts,tv_privacypolicy;
 
     private FirebaseAuth firebaseAuth;
     private ProgressDialog progressDialog;
@@ -39,7 +40,7 @@ public class profileActivity extends AppCompatActivity {
         iv_back=findViewById(R.id.iv_back);
         tv_settings=findViewById(R.id.tv_settings);
         tv_contacts=findViewById(R.id.tv_contacts);
-        tv_aboutUs=findViewById(R.id.tv_aboutUs);
+        tv_privacypolicy=findViewById(R.id.tv_privacypolicy);
 
         firebaseAuth=FirebaseAuth.getInstance();
         progressDialog=new ProgressDialog(this);
@@ -109,6 +110,17 @@ public class profileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(profileActivity.this,SettingsActivity.class));
+            }
+        });
+
+        tv_privacypolicy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://privacypolicyforemr.blogspot.com/2023/05/easemyride.html"));
+                startActivity(intent);
             }
         });
     }
